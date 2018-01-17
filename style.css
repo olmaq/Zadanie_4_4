@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Pacifico');
+
+.clearfix:after,
+.clearfix:before {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float:left;
+}
+
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans';
+}
+
+section {
+	margin: 0 auto;
+}
+	
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header  {
+	background-color: #313234;
+	height: 50px;
+	width: 100%;
+}
+
+header nav img {
+	padding: 10px 0;
+}
+
+header>nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+header>nav ul>li {
+	float: left;
+}
+
+header>nav ul>li:hover {
+	background-color: #536456;
+}
+
+header>nav ul>li>a {
+	line-height: 50px;
+	padding: 0 20px;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+header>nav ul>li>.blue {
+	color: #00c7e8;
+}
+
+section.hero {
+	height: 200px;
+	background: url(http://naturalnie.media.pl/test/laptop-big.jpg);
+	background-size: cover;
+	background-position: 50%;
+}
+
+section.hero .slogan {
+	width: 40%;
+	height: 70px;
+	margin-top: 50px;
+	float: right;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 10px 50px 10px 10px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+section.hero .slogan h1 {
+	margin: 0;
+	font-size: 18px;
+}
+
+section.hero .slogan h1:first-child {
+	font-weight: 100;
+}
+	
+section.benefits .container .item {
+	text-align: center;
+}
+
+section.benefits .container .item .icon {
+	height: 75px;
+	width: 75px;
+	border-radius: 15px;
+	background: gray;
+	color: #fff;
+	margin-left: calc(50% - 37.5px);
+	margin-top: 37.5px;
+	cursor: pointer;
+	font-size: 40px;
+}
+
+section.benefits .container .item:hover .icon {
+	background: #00c7e8;
+}
+
+section.benefits .container .item i {
+	color: #fff;
+	font-size: 40px;
+	margin-top: 18px;
+}
+
+section.benefits .container .item h5 {
+	text-transform: uppercase;
+}
+
+section.benefits .container .item:hover h5 {
+	color: #00c7e8;
+}
+
+section.benefits .container .col-m-4 p {
+	font-size: 12px;
+}
+
+section.featured-works .container {
+	text-align: center;
+}
+
+section.featured-works .container h1 {
+	text-transform: uppercase;
+}
+
+section.featured-works .container p {
+	font-size: 12px;
+}
+
+section.gallery {
+	margin-top: 40px;
+}
+
+section.gallery .photo-container {
+	position: relative;
+	cursor: pointer;
+}
+
+section.gallery .photo-container img {
+	width: 100%;
+	display: block;
+}
+
+section.gallery .photo-container .layer {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+section.gallery .photo-container:hover .layer {
+		display: block;
+}
+
+section.gallery .photo-container .layer .icon-container {
+	position: absolute;
+	color: white;
+	height: 20px;
+	width: 40px;
+	top: calc(50% - 10px);
+	left: calc(50% - 20px);
+	}
+	
+section.team {
+	margin: 50px auto;
+}
+
+section.team .container .col-m-3 {
+	text-align: center;
+	
+}
+
+section.team .container .col-m-3 .person-container {
+	position: relative;
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	margin: auto;
+	cursor: pointer;
+}
+
+section.team .container .col-m-3 .person-container img {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	display: block;
+	
+}
+
+section.team .container .col-m-3 .person-container .layer {
+	position: absolute;
+	display: none;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 50%;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+section.team .container .col-m-3 .person-container .layer .description-container {
+	position: absolute;
+	height: 20px;
+	width: 60px;
+	color: white;
+	top: calc(50% - 10px);
+	left: calc(50% - 30px);
+}
+
+section.team .container .col-m-3 .person-container:hover .layer {
+	display: block;
+}
+
+section.section-tablet {
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding-top: 40px;
+}
+
+section.section-tablet .container .tablet {
+	width: 80%;
+	text-align: center;
+
+}
+
+section.section-tablet .container .col-m-4 img {
+		margin-bottom: 0;
+}
+
+section.section-tablet .container .col-m-8 h2 {
+	text-transform: uppercase;
+}
+
+section.section-tablet .container .col-m-8 p {
+	font-size: 10px;
+}
+
+section.numbers {
+	text-align: center;
+	margin: 20px auto;
+}
+
+section.numbers h1 {
+	font-family: Pacifico;
+	font-size: 50px;
+	height: 50px;
+}
+	
+section.numbers p {
+	text-transform: uppercase;
+	color: #00c7e8;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+footer .about-us,
+footer .address,
+footer .social {
+	position: relative;
+}
+
+footer {
+	background-color: #313332;
+	margin-top: 30px;
+}
+
+footer .container {
+	background-color: #313332;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 10px;
+}
+
+footer .container h3 {
+	text-transform: uppercase;
+}
+
+footer .container h3:after {
+	content: '';
+    display: block;
+    width: 200px;
+    border-bottom: 1px solid #fff;
+    position: absolute;
+    left: 150px;
+    top: 30px;
+}
+
+footer .address .item {
+	margin-bottom: 20px;
+}
+
+footer .container .social .icon {
+	float: left;
+	background: #02c5e7;
+	margin-right: 10px;
+	margin-top: 10px;
+	height: 30px;
+	width: 30px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+
+footer .container .social .icon i {
+	font-size: 20px;
+	margin-top: 5px;
+}
+
+footer .container .copyright-container {
+	text-align: center;
+	background: #000;
+	width: 100%;
+}
+
+@media (max-width: 767px){
+    /* For tablets: */
+    header  {
+		height: auto;
+		width: 100%;
+	}
+
+	header nav img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	header>nav ul {
+		float: none;
+	}
+
+	header>nav ul>li {
+		float: none;
+		display: block;
+		text-align: center;
+		
+	}
+	section.gallery .photo-container .layer {
+		background: rgba(0, 0, 0, 0);
+		display: block;
+	}
+	section.team .container .col-m-3 .person-container .layer {
+	
+		display: block;
+		background: rgba(0, 0, 0, 0);
+}
+
+	section.team .container .col-m-3 .person-container .layer .description-container {
+		top: 100%;
+		color: #000;
+	
+}
+	footer .container .social {
+		margin-bottom: 20px;
+	}
+	
+	footer .container .social .icon {
+		margin-right: 20px;
+		margin-top: 30px;
+		height: 25px;
+		width: 25px;
+		border-radius:10%;
+		text-align: center;
+		padding: 15px 15px;
+		
+	
+	}
+
+}
